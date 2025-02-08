@@ -13,10 +13,10 @@ export default function ChatInterface() {
   };
 
   return (
-    <div className="flex flex-col h-full border border-gray-300 rounded p-4">
+    <div className="flex flex-col h-full border border-zinc-300 rounded p-4">
       <div className="flex-grow overflow-auto mb-4">
         {messages.map((msg, index) => (
-          <div key={index} className="p-2 bg-gray-100 rounded mb-2 text-gray-800">
+          <div key={index} className="p-2 bg-zinc-900 rounded mb-2">
             {msg}
           </div>
         ))}
@@ -26,7 +26,7 @@ export default function ChatInterface() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="flex-grow p-2 border border-gray-300 rounded text-gray-800"
+          className="flex-grow p-2 bg-zinc-950 border border-zinc-300 rounded"
           placeholder="Type your message..."
         />
         <button onClick={sendMessage} className="p-2 bg-blue-500 text-white rounded">
