@@ -6,7 +6,7 @@
   "build": {
     "frontendDist": "../out",
     "devUrl": "http://localhost:3000",
-    "beforeDevCommand": "next dev --turbopack",
+    "beforeDevCommand": "next dev",
     "beforeBuildCommand": "next build"
   },
   "app": {
